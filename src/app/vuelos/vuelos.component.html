@@ -1,0 +1,26 @@
+<div class="flight-search-container">
+    <h2>Buscar Vuelos</h2>
+    <form action="procesar-busqueda.php" method="GET">
+        <div class="form-group">
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+        </div>
+
+        <div class="form-group">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+        </div>
+
+        <div class="form-group">
+            <label for="fecha">Fecha de Vuelo:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pasajeros">Número de Pasajeros:</label>
+            <input type="number" id="pasajeros" name="pasajeros" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Buscar Vuelos">
+        </div>
